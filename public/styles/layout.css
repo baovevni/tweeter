@@ -18,6 +18,14 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: stretch;
+  align-items: center;
 }
 
 /*
