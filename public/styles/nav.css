@@ -3,13 +3,32 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 120px;
+  width: 100%;
   display: flex;
   background-color: #4056A1;
   color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 nav span {
   font-family: "Bungee", sans-serif;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
 }
+
+.tweet-section {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bold-text {
+  font-weight: 800; 
+}
+
+/* In your CSS file, you've correctly set the height, background color, and font color of the navigation bar. However, the requirement specifies that the navigation bar should span the full width of the viewport. You can achieve this by setting the width to 100%.
+
+The requirement also specifies that the <span> within the <nav> should use Bungee as its default font-family. You've done this correctly, but remember to apply the same font to the "Write a new tweet" text as well.
+
+Lastly, the requirement specifies that there should be 1.5em of space on the right and left between the content and the edges of the navigation bar. You've applied this to the <span> element, but it should be applied to the <nav> element instead. */
