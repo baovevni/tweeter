@@ -20,16 +20,21 @@ article.tweet .tweet-author {
   gap: 10px;
 }
 
+article > header > p {
+  opacity: 0.6;
+}
+
 article.tweet .tweet-content {
   display: flex;
   align-items: center; 
-  width: 98%;
-  margin: auto;
+  font-size: medium;
+  margin-left: 10px;
+  margin-right: 10px;
   border-bottom: 5px solid #545149;
 }
 
 article.tweet .tweet-content p {
-  margin: 0 1em 1em 1em;
+  margin: 0 1em 0.5em 1em;
 }
 
 article.tweet .tweet-footer {
@@ -37,14 +42,15 @@ article.tweet .tweet-footer {
   justify-content: space-between;
   font-size: small;
   align-items: center;
-  width: 98%;
-  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 article.tweet:hover {
-  box-shadow: 10px 10px  #545149;
+  box-shadow: 10px 10px 3px #545149;
 }
 
 .tweet-footer i:hover{
   color: #4056A1;
+  transition: color 0.3s ease;
 }
