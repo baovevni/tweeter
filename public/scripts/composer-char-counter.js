@@ -5,12 +5,11 @@ $(document).ready(function() {
     var remaining = maxLength - currentLength;
 
     // Update the counter on the page
-    // Assuming the counter has a class 'counter'
     $('.new-tweet .counter').text(remaining);
 
-    // Optional: Change the color if the text is too long
+    // Change the color if the text is too long
     if(remaining < 0) {
-      $('.new-tweet .counter').addClass('text-danger'); // Example class for red text
+      $('.new-tweet .counter').addClass('text-danger'); 
     } else {
       $('.new-tweet .counter').removeClass('text-danger');
     }
