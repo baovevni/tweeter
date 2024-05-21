@@ -1,0 +1,50 @@
+article.tweet {
+  width: 90%;
+  margin: auto;
+  display: block;
+  outline: 3px solid #545149; 
+  margin-bottom: 20px; 
+}
+
+article.tweet .tweet-header {
+  padding: 10px; 
+  margin-top: 20px;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+article.tweet .tweet-author {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+article.tweet .tweet-content {
+  display: flex;
+  align-items: center; 
+  width: 98%;
+  margin: auto;
+  border-bottom: 5px solid #545149;
+}
+
+article.tweet .tweet-content p {
+  margin: 0 1em 1em 1em;
+}
+
+article.tweet .tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  align-items: center;
+  width: 98%;
+  margin: auto;
+}
+
+article.tweet:hover {
+  box-shadow: 10px 10px  #545149;
+}
+
+.tweet-footer i:hover{
+  color: #4056A1;
+}
