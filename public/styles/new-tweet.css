@@ -30,9 +30,15 @@
   padding: 5px 8px 5px 8px;
 }
 
+label {
+  margin-top: 10px;
+  align-self: baseline;
+  font-weight: 600;
+}
+
 textarea {
   width: 100%;
-  margin-top: 38px;
+  margin-top: 0;
   margin-bottom: 8px;
   background-color: transparent;
   border-top: 0px;
@@ -40,12 +46,21 @@ textarea {
   border-bottom: 5px solid black;
   border-left: 0px;
   font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   resize: none;
   padding: 5px 0px 10px 5px;
 }
 
+textarea:focus {
+  outline: none;
+}
+
+
 label {
   display: block;
   margin-bottom: 4px;
+}
+
+.text-danger {
+  color: red;
 }
