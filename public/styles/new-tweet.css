@@ -34,6 +34,7 @@ label {
   margin-top: 10px;
   align-self: baseline;
   font-weight: 600;
+  color: #545149;
 }
 
 textarea {
@@ -43,9 +44,10 @@ textarea {
   background-color: transparent;
   border-top: 0px;
   border-right: 0px;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #545149;
   border-left: 0px;
   font-family: "Source Sans 3", sans-serif;
+  color: #545149;
   font-weight: 400;
   resize: none;
   padding: 5px 0px 10px 5px;
