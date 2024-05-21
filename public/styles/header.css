@@ -3,7 +3,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 520px;
+  height: 500px;
   flex-direction: column;
   background-color: #f0bb60;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
