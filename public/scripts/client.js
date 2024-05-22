@@ -14,17 +14,23 @@ const renderTweets = function(tweets) {
   }
 }
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = (data) => {
   const tweet = $('<article>').addClass('tweet')
   const tweetInfo = `<header class="tweet-header">
 <div class="tweet-author">
   <img src="${data.user.avatars}">
-  <p>${data.user.name}</p>
+  <p>${escape(data.user.name)}</p>
 </div>
 <p>${data.user.handle}</p>
 </header>
 <div class="tweet-content">
-<p>${data.content.text}</p>
+<p>${escape(data.content.text)}</p>
 </div>
 <footer class="tweet-footer">
 <p>${timeago.format(data.created_at)}</p>
