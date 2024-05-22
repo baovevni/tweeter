@@ -3,6 +3,8 @@ const loadTweets = () => {
 };
 
 const renderTweets = function(tweets) {
+    // Clear the tweet container before rendering new tweets
+    $('.tweets-list').empty();
   // loops through tweets
   for (const tweet of tweets) {
     // calls createTweetElement for each tweet
@@ -58,6 +60,12 @@ $(document).ready(function() {
       .then((res) => {
         loadTweets()
         .then((data) => renderTweets(data))
+        .then(() => {
+          // Clear the tweet text area
+          $('#tweet-text').val('');
+          // Reset the character counter
+          $('.counter').text(140);
+        });
       })
       .catch((err) => console.log(err));
     }
