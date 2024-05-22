@@ -8,7 +8,7 @@ const renderTweets = function(tweets) {
     // calls createTweetElement for each tweet
     let singleTweet = createTweetElement(tweet);
     // takes return value and appends it to the tweets container
-    $('.tweet-container').append(singleTweet);
+    $('.tweets-list').prepend(singleTweet);
   }
 }
 
@@ -45,14 +45,23 @@ $(document).ready(function() {
 
   $("form").on("submit", (event) => {
     event.preventDefault();
-    const formData = $(event.target).serialize();
 
-    addPost(formData)
-    .then((res) => {
-      console.log(res);
-      renderTweets([res])
-    })
-    .catch((err) => console.log(err));
+    const remaining = 140 - $('.new-tweet textarea').val().length;
+    if (remaining === 140) {
+      alert("The tweet cannot be empty")
+    } else if (remaining < 0) {
+      alert("Tweet length should not exceed 140 characters")
+    } else {
+      const formData = $(event.target).serialize();
+  
+      addPost(formData)
+      .then((res) => {
+        loadTweets()
+        .then((data) => renderTweets(data))
+      })
+      .catch((err) => console.log(err));
+    }
+    
   })
 
    loadTweets()
