@@ -11,6 +11,11 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
+header div h2 {
+  color: white;
+  font-weight: 400;
+}
+
 
 /* Tablet Styles */
 @media only screen and (max-width: 1023px) {
