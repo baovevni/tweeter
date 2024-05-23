@@ -9,8 +9,8 @@ $(document).ready(function() {
     $(counter).text(remaining);
 
     // Change the color if the text is too long
-    if(remaining < 0) {
-      $(counter).addClass('text-danger'); 
+    if (remaining < 0) {
+      $(counter).addClass('text-danger');
     } else {
       $(counter).removeClass('text-danger');
     }

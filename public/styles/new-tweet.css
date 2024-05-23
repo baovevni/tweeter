@@ -67,7 +67,7 @@ textarea:focus {
   padding: 5px 0px 5px 0px;
 }
 
-.errors-counter{
+.errors-counter {
   display: flex;
   justify-content: flex-end;
   align-self: center;

@@ -59,7 +59,7 @@ textarea::placeholder {
   font-weight: bold;
 }
 
-.tweet-footer i:hover{
+.tweet-footer i:hover {
   color: #4056A1;
   transition: color 0.3s ease;
   cursor: pointer;
