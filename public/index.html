@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
 
@@ -58,8 +59,7 @@
   <main class="tweet-container">
     <section>
       <form class="new-tweet" method="POST" action="/tweets/">
-        <label>What are you humming about?</label>
-        <textarea id="tweet-text" name="text" rows="2"></textarea>
+        <textarea id="tweet-text" name="text" placeholder="What are you humming about?" rows="2"></textarea>
         <div class="form-actions">
           <button type="submit">Tweet</button>
           <div class="errors-counter">
@@ -71,7 +71,6 @@
       </form>
     </section>
     <section class="tweets-list">
-
     </section>
   </main>
 </body>

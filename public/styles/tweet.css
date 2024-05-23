@@ -28,13 +28,15 @@ article.tweet .tweet-content {
   display: flex;
   align-items: center; 
   font-size: medium;
+  margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: 5px solid #545149;
+  padding-bottom: 10px;
 }
 
 article.tweet .tweet-content p {
-  margin: 0 1em 0.5em 1em;
+  margin: auto;
   white-space: normal;
   overflow-wrap: break-word; 
   width: 98%;
@@ -53,8 +55,19 @@ article.tweet:hover {
   box-shadow: 10px 10px 3px #545149;
 }
 
+textarea::placeholder {
+  font-weight: bold;
+}
+
 .tweet-footer i:hover{
   color: #4056A1;
   transition: color 0.3s ease;
   cursor: pointer;
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1023px) {
+  article.tweet .tweet-content p {
+    width: 96%;
+  }
 }

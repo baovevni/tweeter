@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -37,6 +40,19 @@ main {
   align-items: center;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .tweet-container {
+    margin-left: auto;
+    flex-grow: 2;
+    min-width: 0;
+  }
+}
