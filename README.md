@@ -2,7 +2,12 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+The tweeter app is a simple copy of the well known Twitter (aka X) but with really basic functions like
+  - add a tweet
+  - validation of tweet length
+  - the list of tweets
+  - the new tweets are added on the top of the tweets
+  - teweets has timestamp when the tweet is added
 
 ## Screenshots
 !["Screenshot of the app on wide screen"](https://github.com/baovevni/tweeter/blob/master/docs/tweeter-app-on-the-wider-screens.png)
