@@ -62,7 +62,11 @@
         <textarea id="tweet-text" name="text" rows="2"></textarea>
         <div class="form-actions">
           <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
+          <div class="errors-counter">
+            <p class="empty-tweet-error">The tweet cannot be empty</p>
+            <p class="exceeded-chars-error">Tweet length should not exceed 140 characters</p>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
         </div>
       </form>
     </section>

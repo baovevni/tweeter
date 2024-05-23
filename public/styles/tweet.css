@@ -35,6 +35,9 @@ article.tweet .tweet-content {
 
 article.tweet .tweet-content p {
   margin: 0 1em 0.5em 1em;
+  white-space: normal;
+  overflow-wrap: break-word; 
+  width: 98%;
 }
 
 article.tweet .tweet-footer {
@@ -53,4 +56,5 @@ article.tweet:hover {
 .tweet-footer i:hover{
   color: #4056A1;
   transition: color 0.3s ease;
+  cursor: pointer;
 }

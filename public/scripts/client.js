@@ -55,10 +55,14 @@ $(document).ready(function() {
     event.preventDefault();
 
     const remaining = 140 - $('.new-tweet textarea').val().length;
+
+    $('.empty-tweet-error').hide();
+    $('.exceeded-chars-error').hide();
+
     if (remaining === 140) {
-      alert("The tweet cannot be empty")
+      $('.empty-tweet-error').slideDown();
     } else if (remaining < 0) {
-      alert("Tweet length should not exceed 140 characters")
+      $('.exceeded-chars-error').slideDown();
     } else {
       const formData = $(event.target).serialize();
   
@@ -77,6 +81,11 @@ $(document).ready(function() {
     }
     
   })
+
+  $('.new-tweet textarea').on('input', () => {
+    $('.empty-tweet-error').hide();
+    $('.exceeded-chars-error').hide();
+  });
 
    loadTweets()
   .then((data) => renderTweets(data))
